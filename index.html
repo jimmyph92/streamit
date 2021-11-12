@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>STREAMIT THEME CLONE</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="header-wrap">
+        <header class="main-header">
+            <nav id="nav-bar">
+                <img class ="logo-img" src="https://wordpress.iqonic.design/streamit_wp/wp-content/themes/streamit/assets/images/logo.png"/>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                <div class="main-nav">
+                    <ul class="main-menu">
+                        <li><a href="#" class="menu-link">Home</a></li>
+                        <li><a href="#" class="menu-link">Movies</a></li>
+                        <li><a href="#" class="menu-link">TV Shows</a></li>
+                        <li><a href="#" class="menu-link">Videos</a></li>
+                        <li><a href="#" class="menu-link">Blog</a></li>
+                        <li class="has-dropdown">
+                            <a href="#" class="menu-link">Pages
+                                <span class="arrow"><i class="fas fa-chevron-right"></i></span>
+                            </a>
+                            <ul class="submenu" style="display: none">
+                                <li><a href="#" class="menu-link">About Us</a></li>
+                                <li><a href="#" class="menu-link">Contact</a></li>
+                                <li><a href="#" class="menu-link">FAQ</a></li>
+                                <li><a href="#" class="menu-link">Privacy-Policy</a></li>
+                                <li class="has-dropdown">
+                                    <a href="#" class="menu-link">Pricing
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <ul class="submenu" style="display: none">
+                                        <li><a href="#" class="menu-link">Pricing Plan 1</a></li>
+                                        <li><a href="#" class="menu-link">Pricing Plan 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="menu-link">Genres</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-menu">
+                    <div class="search-bar">
+                        <form>
+                            <input type="textbox" class="form-control" placeholder="Search" hidden/>
+                            <i class="fas fa-search"></i>
+                        </form>
+                    </div>
+                    <div class="account-icon">
+                        <img src="https://wordpress.iqonic.design/streamit_wp/wp-content/themes/streamit/assets/images/user.png"/>
+                    </div>
+                </div>
+            </nav>
+            <section class="hero-slider">
+                <div class="hero-slider-content">
+                    <div class="detail-movies-section">
+                        <div class="logo-img">
+                            <img class ="logo-img-hero" src="https://wordpress.iqonic.design/streamit_wp/wp-content/themes/streamit/assets/images/logo.png"/>
+                        </div>
+                        <div class="film-title">
+                            <h1 class="hero-slide-title">AMMONITE</h1>
+                        </div>
+                        <div class="film-review">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half"></i>
+                            </div>
+                            <div class="movie-text">
+                                <p class="imdb-text">4.7(Imdb)</p>
+                                <p class="ageguide">GP</p>
+                                <p class="fduration">2hr:22mins</p>
+                            </div>
+                        </div>
+                        <div class="film-description">
+                            <p class="movie-plot">Sand and dust storms (SDS), also known as sirocco, haboob, yellow dust, white storms, 
+                                and the harmattan, are a natural phenomenon linked with land and water management and climate change.</p>
+                        </div>
+                        <div class="film-detail">
+                            <div class="casting-hero">
+                                <label class="link-detail">Starring</label>
+                                <a href="#" class="casting-link">Karen Gilchrist</a>,
+                                <a href="#" class="casting-link">James Earl Jones</a>
+                            </div>
+                            <div class="genre-hero">
+                                <label class="link-detail">Genres</label>
+                                <a href="#" class="genre-link">Action</a>
+                            </div>
+                            <div class="tag-link-hero">
+                                <label class="link-detail">Tag</label>
+                                <a href="#" class="tag-link">Action</a>,
+                                <a href="#" class="tag-link">Adventure</a>,
+                                <a href="#" class="tag-link">Horror</a>
+                             </div>
+                        </div>
+                        <div class="btn-play">
+                            <i class="fas fa-play"></i>
+                            <a href="#" class="btn-playnow">Play Now</a>
+                        </div>
+                    </div>
+                    <div class="trailer-button">
+                        <i class="fas fa-play"></i>
+                        <a class="trailer-link"href="https://www.youtube.com/watch?v=AnDhlrs3XVM">Watch Trailer</a>
+                    </div>
+                </div>
+                <div class="prev-next-hero">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </section>
+        </header>
+    </div>
+    <main id="main-content">
+        <section class="latest-movies">
+            <div class="latest-movies-content">
+                <div class="section-title-box">
+                    <div class="section-title">
+                        <h4 class="section-title-home">Latest Movies</h4>
+                        <a class="viewall" href="#">View All</a>
+                    </div>
+                </div>
+                <div class="movies-list">
+                    <div class="movies-detail-box">
+                        <div class="img-box">
+                            <img class="item-img" src="https://lesbian-drama-movies.com/wp-content/uploads/2021/09/the_married_woman_s01e04-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="detail-container">
+                            <div class="detail-box">
+                                <a href="#" class="title-film">Ammonite</a>
+                                <span class="film-duration">2hr:52mins</span>
+                                <div class="filmbtn-play">
+                                    <i class="fas fa-play"></i>
+                                    <a href="#" class="btn-playitem">Play Now</a>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <ul class="social-link-box">
+                                    <li class="has-dropdown">
+                                        <i class="fas fa-share-alt"></i>
+                                        <ul class="sublink">
+                                            <li><i class="fab fa-facebook-f"></i></li>
+                                            <li><i class="fab fa-twitter"></i></li>
+                                            <li><i class="fas fa-link"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-heart"><span class="countbox">+10</span></i></li>
+                                    <li><i class="fas fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies-detail-box">
+                        <div class="img-box">
+                            <img src="https://lesbian-drama-movies.com/wp-content/uploads/2021/06/and_then_there_was_Eve_2017-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="detail-container">
+                            <div class="detail-box">
+                                <a href="#" class="title-film">The World To Come</a>
+                                <span class="film-duration">2hr:52mins</span>
+                                <div class="filmbtn-play">
+                                    <i class="fas fa-play"></i>
+                                    <a href="#" class="btn-playitem">Play Now</a>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <ul class="social-link-box">
+                                    <li class="has-dropdown">
+                                        <i class="fas fa-share-alt"></i>
+                                        <ul class="sublink">
+                                            <li><i class="fab fa-facebook-f"></i></li>
+                                            <li><i class="fab fa-twitter"></i></li>
+                                            <li><i class="fas fa-link"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-heart"><span class="countbox">+10</span></i></li>
+                                    <li><i class="fas fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies-detail-box">
+                        <div class="img-box">
+                            <img src="https://lesbian-drama-movies.com/wp-content/uploads/2020/12/Ammonite_2020-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="detail-container">
+                            <div class="detail-box">
+                                <a href="#" class="title-film">I Care A Lot</a>
+                                <span class="film-duration">2hr:52mins</span>
+                                <div class="filmbtn-play">
+                                    <i class="fas fa-play"></i>
+                                    <a href="#" class="btn-playitem">Play Now</a>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <ul class="social-link-box">
+                                    <li class="has-dropdown">
+                                        <i class="fas fa-share-alt"></i>
+                                        <ul class="sublink">
+                                            <li><i class="fab fa-facebook-f"></i></li>
+                                            <li><i class="fab fa-twitter"></i></li>
+                                            <li><i class="fas fa-link"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-heart"><span class="countbox">+10</span></i></li>
+                                    <li><i class="fas fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies-detail-box">
+                        <div class="img-box">
+                            <img src="https://lesbian-drama-movies.com/wp-content/uploads/2021/06/anchor_and_hope_2017-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="detail-container">
+                            <div class="detail-box">
+                                <a href="#" class="title-film">Carol</a>
+                                <span class="film-duration">2hr:52mins</span>
+                                <div class="filmbtn-play">
+                                    <i class="fas fa-play"></i>
+                                    <a href="#" class="btn-playitem">Play Now</a>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <ul class="social-link-box">
+                                    <li class="has-dropdown">
+                                        <i class="fas fa-share-alt"></i>
+                                        <ul class="sublink">
+                                            <li><i class="fab fa-facebook-f"></i></li>
+                                            <li><i class="fab fa-twitter"></i></li>
+                                            <li><i class="fas fa-link"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-heart"><span class="countbox">+10</span></i></li>
+                                    <li><i class="fas fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="upcoming-movies">
+            <div class="latest-movies-content">
+                <div class="section-title-box">
+                    <div class="section-title">
+                        <h4 class="section-title-home">Upcoming Movies</h4>
+                        <a class="viewall" href="#">View All</a>
+                    </div>
+                </div>
+                <div class="movies-list">
+                    <div class="movies-detail-box">
+                        <div class="img-box">
+                            <img class="item-img" src="https://lesbian-drama-movies.com/wp-content/uploads/2021/09/the_married_woman_s01e04-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="detail-container">
+                            <div class="detail-box">
+                                <a href="#" class="title-film">The Married Woman</a>
+                                <span class="film-duration">2hr:52mins</span>
+                                <div class="filmbtn-play">
+                                    <i class="fas fa-play"></i>
+                                    <a href="#" class="btn-playitem">Play Now</a>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <ul class="social-link-box">
+                                    <li class="has-dropdown">
+                                        <i class="fas fa-share-alt"></i>
+                                        <ul class="sublink">
+                                            <li><i class="fab fa-facebook-f"></i></li>
+                                            <li><i class="fab fa-twitter"></i></li>
+                                            <li><i class="fas fa-link"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-heart"><span class="countbox">+10</span></i></li>
+                                    <li><i class="fas fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies-detail-box">
+                        <div class="img-box">
+                            <img src="https://lesbian-drama-movies.com/wp-content/uploads/2021/09/LoT_S04E12-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="detail-container">
+                            <div class="detail-box">
+                                <a href="#" class="title-film">Ich Will Dich</a>
+                                <span class="film-duration">2hr:52mins</span>
+                                <div class="filmbtn-play">
+                                    <i class="fas fa-play"></i>
+                                    <a href="#" class="btn-playitem">Play Now</a>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <ul class="social-link-box">
+                                    <li class="has-dropdown">
+                                        <i class="fas fa-share-alt"></i>
+                                        <ul class="sublink">
+                                            <li><i class="fab fa-facebook-f"></i></li>
+                                            <li><i class="fab fa-twitter"></i></li>
+                                            <li><i class="fas fa-link"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-heart"><span class="countbox">+10</span></i></li>
+                                    <li><i class="fas fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies-detail-box">
+                        <div class="img-box">
+                            <img src="https://lesbian-drama-movies.com/wp-content/uploads/2021/09/LoT_S04E08-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="detail-container">
+                            <div class="detail-box">
+                                <a href="#" class="title-film">Disobedient</a>
+                                <span class="film-duration">2hr:52mins</span>
+                                <div class="filmbtn-play">
+                                    <i class="fas fa-play"></i>
+                                    <a href="#" class="btn-playitem">Play Now</a>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <ul class="social-link-box">
+                                    <li class="has-dropdown">
+                                        <i class="fas fa-share-alt"></i>
+                                        <ul class="sublink">
+                                            <li><i class="fab fa-facebook-f"></i></li>
+                                            <li><i class="fab fa-twitter"></i></li>
+                                            <li><i class="fas fa-link"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-heart"><span class="countbox">+10</span></i></li>
+                                    <li><i class="fas fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies-detail-box">
+                        <div class="img-box">
+                            <img src="https://lesbian-drama-movies.com/wp-content/uploads/2021/09/LoT_S04E08-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="detail-container">
+                            <div class="detail-box">
+                                <a href="#" class="title-film">The World Unseen</a>
+                                <span class="film-duration">2hr:52mins</span>
+                                <div class="filmbtn-play">
+                                    <i class="fas fa-play"></i>
+                                    <a href="#" class="btn-playitem">Play Now</a>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <ul class="social-link-box">
+                                    <li class="has-dropdown">
+                                        <i class="fas fa-share-alt"></i>
+                                        <ul class="sublink">
+                                            <li><i class="fab fa-facebook-f"></i></li>
+                                            <li><i class="fab fa-twitter"></i></li>
+                                            <li><i class="fas fa-link"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-heart"><span class="countbox">+10</span></i></li>
+                                    <li><i class="fas fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="top-movies">
+            <img class="item-banner" src="https://lesbian-drama-movies.com/wp-content/uploads/2021/09/the_married_woman_s01e04-520x293.jpg" width="100%"/>
+            <div class="top-movies-container">
+                <h4 class="section-title-home">Top 10 in United States</h4>
+                <div class="top-list">
+                    <div class="prev-next-top">
+                        <i class="fas fa-chevron-left"></i>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="top-movies-detail">
+                        <div class="img-box">
+                            <img class="item-img" src="https://lesbian-drama-movies.com/wp-content/uploads/2020/12/Ammonite_2020-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="top-detail-box">
+                            <a href="#" class="top-title">Ammonite</a>
+                            <div class="rating-box">
+                                <p class="filmguide">TV-MA</p>
+                                <span class="top-duration">2hr:52mins</span>
+                            </div>
+                            <div class="filmbtn-play">
+                                <i class="fas fa-play"></i>
+                                <a href="#" class="btn-playitem">Play Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-movies-detail">
+                        <div class="img-box">
+                            <img class="item-img" src="https://lesbian-drama-movies.com/wp-content/uploads/2021/08/a_date_for_mad_mary_2016-748x421.jpg" width="100%"/>
+                        </div>
+                        <div class="top-detail-box">
+                            <a href="#" class="top-title">Mad Mary</a>
+                            <div class="rating-box">
+                                <p class="filmguide">NC-17</p>
+                                <span class="top-duration">2hr:52mins</span>
+                            </div>
+                            <div class="filmbtn-play">
+                                <i class="fas fa-play"></i>
+                                <a href="#" class="btn-playitem">Play Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-movies-detail">
+                        <div class="img-box">
+                            <img class="item-img" src="https://lesbian-drama-movies.com/wp-content/uploads/2019/12/angry_india_godnesses-2015-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="top-detail-box">
+                            <a href="#" class="top-title">Angry India</a>
+                            <div class="rating-box">
+                                <p class="filmguide">NC-17</p>
+                                <span class="top-duration">2hr:52mins</span>
+                            </div>
+                            <div class="filmbtn-play">
+                                <i class="fas fa-play"></i>
+                                <a href="#" class="btn-playitem">Play Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-movies-detail">
+                        <div class="img-box">
+                            <img class="item-img" src="https://lesbian-drama-movies.com/wp-content/uploads/2019/09/and-breathe-normally-2019-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="top-detail-box">
+                            <a href="#" class="top-title">Breathe Normally</a>
+                            <div class="rating-box">
+                                <p class="filmguide">PG</p>
+                                <span class="top-duration">2hr:52mins</span>
+                            </div>
+                            <div class="filmbtn-play">
+                                <i class="fas fa-play"></i>
+                                <a href="#" class="btn-playitem">Play Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="suggested-movies">
+            <div class="latest-movies-content">
+                <div class="section-title-box">
+                    <div class="section-title">
+                        <h4 class="section-title-home">Suggested For You</h4>
+                        <a class="viewall" href="#">View All</a>
+                    </div>
+                </div>
+                <div class="movies-list">
+                    <div class="movies-detail-box">
+                        <div class="img-box">
+                            <img class="item-img" src="https://lesbian-drama-movies.com/wp-content/uploads/2021/09/the_married_woman_s01e04-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="detail-container">
+                            <div class="detail-box">
+                                <a href="#" class="title-film">Another Danger</a>
+                                <span class="film-duration">2hr:52mins</span>
+                                <div class="filmbtn-play">
+                                    <i class="fas fa-play"></i>
+                                    <a href="#" class="btn-playitem">Play Now</a>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <ul class="social-link-box">
+                                    <li class="has-dropdown">
+                                        <i class="fas fa-share-alt"></i>
+                                        <ul class="sublink">
+                                            <li><i class="fab fa-facebook-f"></i></li>
+                                            <li><i class="fab fa-twitter"></i></li>
+                                            <li><i class="fas fa-link"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-heart"><span class="countbox">+10</span></i></li>
+                                    <li><i class="fas fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies-detail-box">
+                        <div class="img-box">
+                            <img src="https://lesbian-drama-movies.com/wp-content/uploads/2021/09/LoT_S04E12-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="detail-container">
+                            <div class="detail-box">
+                                <a href="#" class="title-film">Another Danger</a>
+                                <span class="film-duration">2hr:52mins</span>
+                                <div class="filmbtn-play">
+                                    <i class="fas fa-play"></i>
+                                    <a href="#" class="btn-playitem">Play Now</a>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <ul class="social-link-box">
+                                    <li class="has-dropdown">
+                                        <i class="fas fa-share-alt"></i>
+                                        <ul class="sublink">
+                                            <li><i class="fab fa-facebook-f"></i></li>
+                                            <li><i class="fab fa-twitter"></i></li>
+                                            <li><i class="fas fa-link"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-heart"><span class="countbox">+10</span></i></li>
+                                    <li><i class="fas fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies-detail-box">
+                        <div class="img-box">
+                            <img src="https://lesbian-drama-movies.com/wp-content/uploads/2021/09/LoT_S04E08-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="detail-container">
+                            <div class="detail-box">
+                                <a href="#" class="title-film">Another Danger</a>
+                                <span class="film-duration">2hr:52mins</span>
+                                <div class="filmbtn-play">
+                                    <i class="fas fa-play"></i>
+                                    <a href="#" class="btn-playitem">Play Now</a>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <ul class="social-link-box">
+                                    <li class="has-dropdown">
+                                        <i class="fas fa-share-alt"></i>
+                                        <ul class="sublink">
+                                            <li><i class="fab fa-facebook-f"></i></li>
+                                            <li><i class="fab fa-twitter"></i></li>
+                                            <li><i class="fas fa-link"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-heart"><span class="countbox">+10</span></i></li>
+                                    <li><i class="fas fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies-detail-box">
+                        <div class="img-box">
+                            <img src="https://lesbian-drama-movies.com/wp-content/uploads/2021/09/LoT_S04E08-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="detail-container">
+                            <div class="detail-box">
+                                <a href="#" class="title-film">Another Danger</a>
+                                <span class="film-duration">2hr:52mins</span>
+                                <div class="filmbtn-play">
+                                    <i class="fas fa-play"></i>
+                                    <a href="#" class="btn-playitem">Play Now</a>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <ul class="social-link-box">
+                                    <li class="has-dropdown">
+                                        <i class="fas fa-share-alt"></i>
+                                        <ul class="sublink">
+                                            <li><i class="fab fa-facebook-f"></i></li>
+                                            <li><i class="fab fa-twitter"></i></li>
+                                            <li><i class="fas fa-link"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-heart"><span class="countbox">+10</span></i></li>
+                                    <li><i class="fas fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="feature-movies">
+            <div class="feature-movie-detail">
+                <div class="feature-movies-box">
+                    <div class="feature-img">
+                        <img class="title-img" src=https://wordpress.iqonic.design/streamit_wp/wp-content/uploads/2020/11/parallax-logo.png" max-width="100%" />
+                    </div>
+                    <div class="ratingtext-imdb">
+                            <p>4.7(Imdb)</p>
+                        </div>
+                    <div class="feature-rating-box">
+                        <p class="feature-rating">15+</p>
+                        <p class="feature-duration">2hr:52mins</p>
+                    </div>
+                    <div class="film-description">
+                        <h4 class="feature-item-title">Movie of the year</h4>
+                        <p class="feature-item-excerpt">Baileys Irish Cream is an Irish cream liqueur an alcoholic beverage flavoured with cream, cocoa, 
+                            and Irish whiskey made by Diageo at Republic of Ireland and in Mallusk, Northern Ireland.</p>
+                    </div>
+                    <div class="btn-play">
+                        <i class="fas fa-play"></i>
+                        <a href="#" class="btn-playnow">Play Now</a>
+                    </div>
+                </div>
+                <div class="feature-img-box">
+                    <img src="https://wordpress.iqonic.design/streamit_wp/wp-content/uploads/elementor/thumbs/final-fantasy-p988aht4beusazacqjctfkp9n63cdhh7fho3cwfloo.jpg" width="100%"/>
+                </div>            
+            </div>
+        </section>
+        <section class="trending-movies-gallery">
+            <div class="trending-container">
+                <div class="section-title">
+                    <h4 class="section-title-home">Trending</h4>
+                </div>
+                <div class="trending-gallery">
+                    <img class="img-gallery" src="https://lesbian-drama-movies.com/wp-content/uploads/2020/04/fingersmith_2005-196x126.jpg" width="100%"/>
+                    <img class="img-gallery" src="https://lesbian-drama-movies.com/wp-content/uploads/2020/04/lillywantmeplease-aimee-jaguar-1999-196x126.jpg" width="100%"/>
+                    <img class="img-gallery" src="https://lesbian-drama-movies.com/wp-content/uploads/2020/01/portrail_of_a_lady_on_fire_2019-196x126.jpg" width="100%"/>
+                    <img class="img-gallery" src="https://lesbian-drama-movies.com/wp-content/uploads/2021/04/the_world_to_come_2020-196x126.jpg" width="100%"/>
+                    <img class="img-gallery" src="https://lesbian-drama-movies.com/wp-content/uploads/2020/12/Ammonite_2020-196x126.jpg" width="100%"/>
+                </div>
+            </div>
+        </section>
+        <section class="feature-series">
+            <div class="fseries-container">
+                <img src="https://wordpress.iqonic.design/streamit_wp/wp-content/uploads/2020/10/slider2_-768x432.jpg" width="100%"/>
+                <div class="fseries-tabs">
+                    <div class="tabmenu">
+                        <ul class="tabmenu-item">
+                            <li><a href="#"></a>OverView</li>
+                            <li><a href="#"></a>Episodes</li>
+                        </ul>
+                    </div>
+                    <div id="Overview" class="tabcontent">
+                        <div class="detail-series-section">
+                            <img class ="logo-img-hero" src="https://wordpress.iqonic.design/streamit_wp/wp-content/themes/streamit/assets/images/logo.png"/>
+                            <div class="fseries-title">
+                                <h1 class="feature-series-title">Killing Eve</h1>
+                            </div>
+                            <p class="season-detail">2 Seasons<span><i class="fas fa-circle"></i>Feb 2019</span></p>
+                            <div class="top-series">
+                                <img src="https://wordpress.iqonic.design/streamit_wp/wp-content/uploads/2020/10/trending-label.png" />
+                                <p=>#1 in Series Today</p>
+                            </div>
+                            <div class="film-description">
+                                <p>Ammonite revolves around the romance between Anning and Charlotte. 
+                                    The fate between them is also unpredictable. <br>One day, the young couple went to Mary Anning to learn about fossils.</p>
+                            </div>
+                            <div class="btn-play">
+                                <i class="fas fa-play"></i>
+                                <a href="#" class="btn-playnow">Play Now</a>
+                            </div>
+                            <div class="film-detail">
+                                <div class="casting-hero">
+                                    <label class="link-detail">Starring</label>
+                                    <a href="#" class="casting-link">Karen Gilchrist</a>,
+                                    <a href="#" class="casting-link">James Earl Jones</a>
+                                </div>
+                                <div class="genre-hero">
+                                    <label class="link-detail">Genres</label>
+                                    <a href="#" class="genre-link">Action</a>
+                                </div>
+                                <div class="tag-link-hero">
+                                    <label class="link-detail">Tag</label>
+                                    <a href="#" class="tag-link">Action</a>,
+                                    <a href="#" class="tag-link">Adventure</a>,
+                                    <a href="#" class="tag-link">Horror</a>
+                                </div>
+                            </div>   
+                        </div>        
+                    </div> 
+                    <div class="prev-next-feature">
+                        <i class="fas fa-chevron-left"></i>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="recommend-movies">
+            <div class="latest-movies-content">
+                <div class="section-title-box">
+                    <div class="section-title">
+                        <h4 class="section-title-home">Recommended For You</h4>
+                        <a class="viewall" href="#">View All</a>
+                    </div>
+                </div>
+                <div class="movies-list">
+                    <div class="movies-detail-box">
+                        <div class="img-box">
+                            <img class="item-img" src="https://lesbian-drama-movies.com/wp-content/uploads/2021/09/the_married_woman_s01e04-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="detail-container">
+                            <div class="detail-box">
+                                <a href="#" class="title-film">Another Danger</a>
+                                <span class="film-duration">2hr:52mins</span>
+                                <div class="filmbtn-play">
+                                    <i class="fas fa-play"></i>
+                                    <a href="#" class="btn-playitem">Play Now</a>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <ul class="social-link-box">
+                                    <li class="has-dropdown">
+                                        <i class="fas fa-share-alt"></i>
+                                        <ul class="sublink">
+                                            <li><i class="fab fa-facebook-f"></i></li>
+                                            <li><i class="fab fa-twitter"></i></li>
+                                            <li><i class="fas fa-link"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-heart"><span class="countbox">+10</span></i></li>
+                                    <li><i class="fas fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies-detail-box">
+                        <div class="img-box">
+                            <img src="https://lesbian-drama-movies.com/wp-content/uploads/2021/09/LoT_S04E12-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="detail-container">
+                            <div class="detail-box">
+                                <a href="#" class="title-film">Another Danger</a>
+                                <span class="film-duration">2hr:52mins</span>
+                                <div class="filmbtn-play">
+                                    <i class="fas fa-play"></i>
+                                    <a href="#" class="btn-playitem">Play Now</a>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <ul class="social-link-box">
+                                    <li class="has-dropdown">
+                                        <i class="fas fa-share-alt"></i>
+                                        <ul class="sublink">
+                                            <li><i class="fab fa-facebook-f"></i></li>
+                                            <li><i class="fab fa-twitter"></i></li>
+                                            <li><i class="fas fa-link"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-heart"><span class="countbox">+10</span></i></li>
+                                    <li><i class="fas fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies-detail-box">
+                        <div class="img-box">
+                            <img src="https://lesbian-drama-movies.com/wp-content/uploads/2021/09/LoT_S04E08-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="detail-container">
+                            <div class="detail-box">
+                                <a href="#" class="title-film">Another Danger</a>
+                                <span class="film-duration">2hr:52mins</span>
+                                <div class="filmbtn-play">
+                                    <i class="fas fa-play"></i>
+                                    <a href="#" class="btn-playitem">Play Now</a>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <ul class="social-link-box">
+                                    <li class="has-dropdown">
+                                        <i class="fas fa-share-alt"></i>
+                                        <ul class="sublink">
+                                            <li><i class="fab fa-facebook-f"></i></li>
+                                            <li><i class="fab fa-twitter"></i></li>
+                                            <li><i class="fas fa-link"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-heart"><span class="countbox">+10</span></i></li>
+                                    <li><i class="fas fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movies-detail-box">
+                        <div class="img-box">
+                            <img src="https://lesbian-drama-movies.com/wp-content/uploads/2021/09/LoT_S04E08-520x293.jpg" width="100%"/>
+                        </div>
+                        <div class="detail-container">
+                            <div class="detail-box">
+                                <a href="#" class="title-film">Another Danger</a>
+                                <span class="film-duration">2hr:52mins</span>
+                                <div class="filmbtn-play">
+                                    <i class="fas fa-play"></i>
+                                    <a href="#" class="btn-playitem">Play Now</a>
+                                </div>
+                            </div>
+                            <div class="social-share">
+                                <ul class="social-link-box">
+                                    <li class="has-dropdown">
+                                        <i class="fas fa-share-alt"></i>
+                                        <ul class="sublink">
+                                            <li><i class="fab fa-facebook-f"></i></li>
+                                            <li><i class="fab fa-twitter"></i></li>
+                                            <li><i class="fas fa-link"></i></li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-heart"><span class="countbox">+10</span></i></li>
+                                    <li><i class="fas fa-plus"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-area">
+            <div class="footer-section">
+                <div class="footer-leftside">
+                    <div class="footer-menu">                
+                            <a class="menu-link" href="#">Term Of Use</a>
+                            <a class="menu-link" href="#">Privacy-Policy</a>
+                            <a class="menu-link" href="#">Blog</a>
+                            <a class="menu-link" href="#">FAQ</a>
+                            <a class="menu-link" href="#">Watch List</a>
+                    </div>
+                    <div class="copyright-content">
+                        <p>© 2021 STREAMIT. All Rights Reserved. All videos and shows on this platform are trademarks of, and all related images and content are the property of, Streamit Inc. 
+                            Duplication and copy of this is strictly prohibited. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="follow-us">
+                    <h6 class="footer-tittle">Follow Us:</h6>
+                    <div class="footer-social">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github-square"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="app-promote">
+                    <h6 class="footer-tittle">Streamit App</h6>
+                    <div class="app-download">
+                        <a href="#"><img src="https://wordpress.iqonic.design/streamit_wp/wp-content/uploads/2020/12/022.png"/></a>
+                        <a href="#"><img src="https://wordpress.iqonic.design/streamit_wp/wp-content/uploads/2020/12/011.png"/></a>
+                    </div>
+                </div>
+                <div class="back-to-top">
+                    <i class="fas fa-chevron-right"></i>
+                </div>    
+            </div>
+        </section>
+    </footer> 
+</body>
+</html>

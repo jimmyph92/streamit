@@ -1,0 +1,797 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    --primary: #E50914;
+    --first: #D1D0CF;
+    --second: #FFFFFF;
+    --third: #bf000a;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+/*Header*/
+.header-wrap{
+    max-width: 100%;
+    height: 100%;
+    background-image: url("./bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-header{
+    margin: 0 5em;
+}
+/*main-menu*/
+.main-header #nav-bar{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(20, 20, 20, 0.5);
+    opacity: 0.9;
+    filter: blur(90);
+    position: fixed;
+}
+#nav-bar .main-nav {
+    margin-left: 10em;
+    margin-right: 12em;
+}
+.main-nav .main-menu{
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.5em;
+    list-style-type: none;
+}
+.main-menu a{
+    color: var(--first);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 1em;
+    
+}
+.main-menu a:active{
+    color: var(--primary);
+}
+.main-menu a:hover{
+    color: var(--primary);
+}
+span.arrow i.fas.fa-chevron-right{
+    transform: rotate(90deg);
+}
+
+/*submenu 1 on hover CSS*/
+ul > li:hover > ul.submenu{
+    display: block!important;   
+    position: absolute;
+    top: 4em;
+}
+ul > li:hover > ul.submenu > li{
+    display: block!important;
+    background-color: #000000;
+    min-width: 14em;
+    margin-left: -2.5em;
+    padding-left: 2em;
+    padding-right: 4em;
+    
+}
+li.has-dropdown > ul.submenu > li > a.menu-link{
+    text-transform: capitalize;
+    line-height: 2.5em;
+    
+}
+li.has-dropdown > ul.submenu > li > a.menu-link:hover{
+    background-color: rgba(200, 0, 0, 0.4);
+    border-left: 2px solid var(--primary);
+    color: var(--second);
+}
+/* submenu 2 on hover */
+ul > li:hover > ul.submenu > li:hover > ul.submenu{
+    display: block;
+    position: absolute;
+    top: 8em; 
+    left: 40em;
+}
+ul > li:hover > ul.submenu > li:hover > ul.submenu > a.menu-link{
+    border-left: 2px solid var(--primary);
+    width: 10vw;
+    height: 5vh;
+}
+
+/* right menu*/
+.main-header .right-menu{
+    display: flex;
+    flex-direction: row;
+    color: var(--first);
+    padding-top: 1.5em;
+}
+.fa-search:before {
+    margin-left: 9em;
+}
+/*account icon*/
+.account-icon{
+    margin: -0.6em 2em 0 1em;
+}
+.account-icon .fa-user-circle:before {
+    content: "\f2bd";
+    margin-left: 1.5em;
+}
+
+/* humberger menu mobile */
+
+
+
+/*Hero slider*/
+.hero-slider{
+    display: flex;
+    flex-direction: row;
+}
+.hero-slider-content{
+    display: flex;
+    flex-direction: row;
+    max-width: 58.3%;
+}
+img.logo-img-hero {
+    background-color: rgba(200, 0, 0, 0.5);
+    opacity: 0.9;
+    padding-right: 3em;
+    border-left: 5px solid #E50914;
+    padding-left: 1em;
+    margin-top: 3em;
+}
+/*detail movie section | hero Slider */
+.film-title {
+    font-size: 80px;
+    color: var(--second);
+}
+h1.hero-slide-title {
+    font-size: 1.5em;
+    color: var(--second);
+}
+.film-review{
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+}
+i.fas.fa-star {
+    color: var(--primary);
+}
+i.fas.fa-star-half {
+    color: var(--primary);
+}
+.movie-text {
+    display: flex;
+    flex-direction: row;
+    margin-top: -1em;
+    margin-right: 1em;
+    color: var(--second);
+}
+p.ageguide {
+    padding: 0.3em;
+    border: 1px solid #6c757d;
+    color: #ffffff;
+    background-color: var(--primary);
+    font-size: 0.8em;
+}
+p.imdb-text,
+p.ageguide,
+p.fduration {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+a.tag-link,
+a.casting-link,
+a.genre-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+label.link-detail {
+    color: #E50914;
+    font-weight: bold;
+    font-size: 18px;
+}
+p.movie-plot {
+    color: #ffffff;
+}
+/*play-button*/
+.btn-play {
+    margin-top: 1em;
+    margin-bottom: 5em;
+    width: 10em;
+    height: 2em;
+    display: inline-block;
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1em 0em 0 0;
+}
+a.btn-playnow {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.fa-play:before {
+    color: var(--second);
+    margin-right: 0.5em;
+}
+/*trailer watch*/
+.trailer-button {
+    display: inline-flex;
+    flex-direction: row;
+    position: relative;
+    top: 17em;
+    left: 1em;
+    width: 60vw;
+    height: 15vh;
+}
+.trailer-button .fa-play:before {
+    font-size: 30px;
+    margin-right: 0.5em;
+    padding: 1em;
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+}
+a.trailer-link {
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--second);
+    font-weight: bold;
+    padding: 1.5em 2em 0 2em;
+    border-left: 0.5em solid var(--primary);
+    border-radius: 50%;
+    margin-top: -1.4em;
+    text-align: center;
+    width: 8em;
+    height: 3em;
+}
+/*prev-next-hero*/
+.prev-next-hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.prev-next-hero > i.fas.fa-chevron-left {
+    position: relative;
+    color: var(--second);
+    top: 24em;
+    left: -52em;
+}
+.prev-next-hero > i.fas.fa-chevron-right {
+    position: relative;
+    color: var(--second);
+    top: 24em;
+    right: -32em;
+}
+.prev-next-hero > .fa-chevron-left:before,
+.prev-next-hero > .fa-chevron-right:before
+{
+    border: 1px solid var(--second);
+    padding: 0.8em 1em;
+    border-radius: 50%;
+}
+/*main content*/
+/*latest movies*/
+.latest-movies{
+    background-color:#000000;
+    display: flex;
+    flex-direction: column;
+}
+.latest-movies-content{
+    margin: 3em 5em;
+}
+.section-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h4.section-title-home{
+    color: var(--second);
+    font-size: 1.5rem;
+}
+a.viewall {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+    padding-top: 3em;
+}
+.movies-list{
+    display: flex;
+    flex-direction: row;
+}
+.movies-detail-box {
+    display: flex;
+    flex-direction: column;
+    height: 23vh;
+    width: 22vw;
+}
+.detail-container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -12.3em;
+    left: 0;
+    padding: 1.4em 0;
+}
+.detail-container:hover{
+    background-color:#000000;
+    border-left: 2px solid var(--primary);
+    padding-bottom: 3.5em;
+    transition: 0.2s ease-in-out;
+}
+.detail-box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: var(--second);
+}
+a.title-film {
+    color: var(--second);
+    text-decoration: none;
+    margin: 1.5em 0 0.5em 0.5em;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+span.film-duration {
+    font-size: 14px;
+    margin-bottom: 1em;
+    margin-left: 0.7em;
+    color: var(--second);
+    font-weight: bold;
+}
+/* PlayNOW button*/
+.filmbtn-play {
+    background-color: var(--third);
+    padding: 0.5em 0.3em;
+    margin-left: 0.5em;
+    width: 6.5em;
+    text-transform: uppercase;
+}
+i.fas.fa-play::before {
+    margin-left: 0.5em;
+}
+a.btn-playitem {
+    text-decoration: none;
+    color: var(--second);
+    font-size: 12px;
+}
+/*Social share*/
+.social-link-box{
+    display: flex;
+    flex-direction: column;
+}
+.social-link-box:hover{
+    opacity: 1;
+}
+.social-share {
+    position: absolute;
+    top: 3em;
+    left: 7em;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    opacity: 0
+}
+.social-share:hover{
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+}
+ul.social-link-box {
+    position: relative;
+    top: -1em;
+    left: 8em;
+    list-style-type: none;
+}
+/*social link box icon*/
+i.fas.fa-share-alt,
+i.fas.fa-plus{
+    margin-bottom: 1em;
+    border: 1px solid var(--second);
+    border-radius: 50%;
+    padding: 0.5em;
+    background-color: var(--second);
+    color: var(--third);
+    font-size: 1em;
+}
+i.fas.fa-heart::before{
+    margin-bottom: 1em;
+    border: 1px solid var(--second);
+    border-radius: 50%;
+    padding: 0.5em;
+    background-color: var(--second);
+    color: var(--third);
+    font-size: 1em;
+}
+span.countbox {
+    position: absolute;
+    top: 5em;
+    left: 7.6em;
+    font-size: 0.5em;
+    border: 1px solid var(--second);
+    border-radius: 50%;
+    color: var(--second);
+    background-color: var(--third);
+    padding: 0.2em 0.2em 0.3em 0.2em;
+}
+i.fas.fa-plus:hover,
+i.fas.fa-share-alt:hover,
+i.fas.fa-heart:hover{
+    color: var(--second);
+    background-color: var(--primary);
+    border: 3px solid var(--first);  
+}
+i.fas.fa-heart {
+    margin-bottom: 1em;
+}
+/*sublink*/
+li.has-dropdown {
+    display: inline-block;
+    color: var(--second);
+}
+.sublink{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+ul.sublink {
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    list-style-type: none;
+    opacity: 0;
+}
+i.fas.fa-link,
+i.fab.fa-twitter{
+    margin-left: 0.5em;
+}
+i.fas.fa-link:hover,
+i.fab.fa-twitter:hover,
+i.fab.fa-facebook-f:hover{
+    color: #e50914;
+    opacity: 1;
+}
+/*upcoming movies*/
+section.upcoming-movies {
+    height: 25em;
+}
+/*top movies */
+.top-movies{
+    display: flex;
+    flex-direction: column; 
+    margin: 0 5em;
+}
+.top-movies-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 1em;
+}
+.top-list{
+    width: 21vw;
+    max-height: 100%;
+}
+.top-movies-detail {
+    height: 10em;
+    width: 20em;
+}
+.top-movies-detail:hover{
+    border-left: 2px solid var(--primary);
+}
+.top-detail-box {
+    position: relative;
+    top: -10em;
+}
+.item-img .img{
+    height: 9.8em;
+    width: 20em;
+}
+/*prev next top movie */
+.prev-next-top > i.fas.fa-chevron-left{
+    color: var(--second);
+    position: relative;
+    left: 10em;
+    top: 1.5em;
+    transform: rotate(90deg);
+}
+.prev-next-top > i.fas.fa-chevron-right{
+    position: relative;
+    color: var(--second);
+    top: 40em;
+    left: 9em;
+    transform: rotate(90deg);
+}
+/*rating-box-topmovie */
+.rating-box{
+    display: flex;
+    flex-direction: row;
+}
+span.top-duration{
+    font-size: 0.8em;
+    color: var(--second);
+    margin-top: 1.7em;
+}
+a.top-title {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--second);
+    margin-left: 0.3em;
+}
+p.filmguide {
+    padding: 0.1em;
+    border: 1px solid #6c757d;
+    color: #ffffff;
+    background-color: #999999;
+    font-weight: bold;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 0.8em;
+}
+/*suggested movies */
+/*feature movies */
+section.feature-movies {
+    clear: both;
+    display: block;
+    background: url(https://wordpress.iqonic.design/streamit_wp/wp-content/uploads/elementor/thumbs/final-fantasy-p988aht4beusazacqjctfkp9n63cdhh7fho3cwfloo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: hue;
+    background-attachment: fixed;
+    filter: blur(90%);
+    margin-top: 10em;
+    padding-top: 1em;
+}
+.feature-movie-detail {
+    margin: 3em 0;
+    display: flex;
+    flex-direction: row;
+    padding: 2em 5em 1em 5em;
+}
+.feature-movies-box {
+    clear: both;
+    color: var(--second);
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    margin-right: 5em;
+}
+.feature-rating-box{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+}
+p.feature-duration{
+    font-size: 1em;
+    color: var(--second);
+    font-weight: bold;
+}
+.feature-rating{
+    height: 1em;
+    width: 1.5em;
+}
+p.feature-rating {
+    padding: 0.3em 0.2em 0.5em;
+    border: 1px solid #6c757d;
+    color: #ffffff;
+    background-color: #999999;
+    font-weight: bold;
+    margin-right: 0.5em;
+    font-size: 0.8em;
+}
+.feature-img-box {
+    width: 100%;
+}
+h4.feature-item-title {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+p.feature-item-excerpt {
+    color: var(--first);
+}
+
+/*trending movie gallery*/
+section.trending-movies-gallery{
+    margin-bottom: 5em;
+    padding: 2em 0;
+    display: block;
+}
+.trending-container{
+    margin: 0 5em;
+}
+.trending-gallery{
+    display: flex;
+    flex-direction: row;
+}
+/*feature series */
+section.feature-series{
+    margin-bottom: 5em;
+    padding: 2em 0;
+    display: block;
+    height: 44em;
+}
+.fseries-container{
+    margin: 0 5em;
+    color: var(--second);
+}
+/*tab button CSS*/
+.fseries-container {
+    margin: 0 5em;
+    color: var(--second);
+}
+.tabmenu{
+    text-align: center;
+}
+ul.tabmenu-item{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.tabmenu > ul.tabmenu-item >li:first-child{
+    margin-right: 2em;
+    background-color: var(--first);
+    color: var(--primary);
+    border: 1px solid var(--second);
+    padding: 0.5em 1em;
+    border-top: 5px solid var(--primary);
+    font-weight: 800;
+}
+.tabmenu > ul.tabmenu-item > li:last-child{
+    background-color: transparent;
+    color: var(--second);
+    font-weight: 800;
+    margin-top: 0.8em;
+}
+.fseries-tabs {
+    position: relative;
+    top: -48em;
+}
+button.tablinks:first-child {
+    margin-right: 3em;
+}
+.detail-series-section{
+    padding: 0 2em;
+}
+.feature-series-title h1{
+    font-size: 4.25em;
+}
+.top-series img{
+    margin-right: 1em;
+}
+p.season-detail {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+i.fas.fa-circle {
+    margin: 0 1em;
+}
+h1.feature-series-title {
+    font-size: 4.25em;
+}
+.tabcontent > .detail-series-section > .btn-play{
+    margin-top: 1em;
+    margin-bottom: 2em;
+    width: 10em;
+    height: 2em;
+    display: inline-block;
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1em 0em 0 0;
+}
+.prev-next-feature{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.prev-next-feature > .fa-chevron-left:before{
+    content: "\f053";
+    position: relative;
+    top: -17.5em;
+    background-color: #000000;
+    padding: 1em 0.5em;
+}
+.prev-next-feature > .fa-chevron-right:before{
+    content: "\f054";
+    position: relative;
+    top: -17.5em;
+    border: 1px solid #000000;
+    background-color: #000000;
+    padding: 1em 0.5em;
+}
+
+/*recommend movies */
+section.recommend-movies {
+    margin-bottom: 10em;
+}
+/*Footer*/
+.footer-area{
+    background-color: #000000;
+}
+.footer-section{
+    display: flex;
+    flex-direction: row;
+    margin: 0 5em;
+}
+/*Footer menu*/
+.footer-leftside {
+    display: block;
+    width: 40vw;
+    height: 25vh;
+    margin-top: 2.5em;
+    margin-right: 2em;
+}
+.footer-menu{
+    display: flex;
+    flex-direction: row;
+}
+.footer-menu a{
+    text-decoration: none;
+    margin-right: 1em;
+    color: var(--second);
+    font-weight: bold;
+}
+.footer-menu a:hover{
+    color: var(--primary);
+}
+/* copyright content */
+.copyright-content p{
+    color: var(--second);
+    font-size: 14px;
+}
+/*Follow Footer*/
+.follow-us{
+    margin-left: 2em;
+    display: block;
+    width: 20vw;
+    clear: both;
+}
+.footer-tittle{
+    font-size: 16px;
+    color: var(--second);
+}
+.footer-social{
+    margin-top: -1em;
+    clear: both;
+    float: left;
+    margin-right: 2em;
+}
+.footer-social .fab{
+    font-size: 14px;
+    color: var(--second);
+    border: 1px solid rgba(41, 41, 41, 0.76);
+    border-radius: 50%;
+    padding: 1.5em;   
+}
+.footer-social .fab:hover{
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    background-color:rgba(20, 20, 20, 0.5);
+}
+
+
+/*official-app*/
+.app-promote{
+    margin-left: 2em;
+    display: block;
+    clear: both;
+    width: 30%;
+}
+.app-download{
+    margin-top: -1em;
+}
+
+
+
+
+
+
+
+
+
+
